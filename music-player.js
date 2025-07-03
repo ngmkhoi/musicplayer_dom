@@ -95,6 +95,7 @@ const musicPlayer = {
             // Đổi icon từ play sang pause
             this.playIcon.classList.remove("fa-play");
             this.playIcon.classList.add("fa-pause");
+            this.cdThumb.classList.add("playing");
         };
 
         // Sự kiện khi audio bị dừng
@@ -103,6 +104,7 @@ const musicPlayer = {
             // Đổi icon từ pause sang play
             this.playIcon.classList.remove("fa-pause");
             this.playIcon.classList.add("fa-play");
+            this.cdThumb.classList.remove("playing");
         };
 
         // Sự kiện click nút bài trước
